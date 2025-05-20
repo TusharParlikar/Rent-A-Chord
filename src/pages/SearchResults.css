@@ -1,0 +1,192 @@
+.rent-days-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.rent-days-counter button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rent-days-counter button:hover {
+  background-color: #0056b3;
+}
+
+.rent-days-counter span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.total-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+/* General container styling */
+.search-results-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(255, 0, 127, 0.3);
+  text-align: center;
+}
+
+/* Instrument details section */
+.instrument-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.instrument-details img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(255, 0, 127, 0.3);
+}
+
+.instrument-details h2 {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.instrument-details p {
+  font-size: 1rem;
+  color: #00fff0;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* Pricing options section */
+.pricing-options {
+  margin-top: 30px;
+}
+
+.option-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-toggle button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.option-toggle button.active {
+  background-color: #2980b9;
+}
+
+.option-toggle button:hover {
+  background-color: #1f78a1;
+  transform: translateY(-2px);
+}
+
+/* Rental days selector */
+.rental-days {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rental-days label {
+  font-size: 1rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.days-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.days-selector button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.days-selector button:hover {
+  background-color: #c0392b;
+}
+
+.days-selector span {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Price display */
+.price-display {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #00fff0;
+  font-weight: bold;
+}
+
+/* Add to bag button */
+.add-to-bag-btn {
+  margin-top: 30px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff007f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-to-bag-btn:hover {
+  background-color: #ff3399;
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .search-results-container {
+    padding: 20px;
+  }
+
+  .instrument-details img {
+    max-width: 100%;
+  }
+
+  .option-toggle button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .add-to-bag-btn {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}

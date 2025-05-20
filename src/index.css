@@ -1,0 +1,269 @@
+/* Ensure the body and root container take up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Main content area */
+.main-content {
+  flex: 1; /* Pushes the footer to the bottom */
+}
+
+/* Footer styles */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Add to index.css or separate CSS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card button {
+  margin-top: 0.5rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme (Winter Theme) */
+body.light {
+  background-color: #e0f7fa; /* Light cyan background */
+  color: #013a63; /* Darker blue text for better contrast */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light .navbar {
+  background-color: #b3e5fc; /* Light blue navbar */
+  color: #013a63; /* Darker blue text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light .search-bar input {
+  background-color: #e1f5fe; /* Very light blue for input */
+  color: #013a63; /* Darker blue text */
+  border: 1px solid #81d4fa; /* Blue border */
+}
+
+body.light .search-button {
+  background-color: #0288d1; /* Bright blue button */
+  color: white;
+}
+
+body.light .search-button:hover {
+  background-color: #0277bd; /* Darker blue on hover */
+}
+
+body.light .card {
+  background-color: #ffffff; /* White card background */
+  color: #013a63; /* Darker blue text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light .card button {
+  background-color: #0288d1; /* Bright blue button */
+  color: white;
+}
+
+body.light .card button:hover {
+  background-color: #0277bd; /* Darker blue on hover */
+}
+
+body.light footer {
+  background-color: #b3e5fc; /* Light blue footer */
+  color: #013a63; /* Darker blue text */
+}
+
+/* Light Theme (Sunny Theme) */
+body.light {
+  background-color: #FFF9E5; /* Light warm yellow background */
+  color: #FF6B00; /* Warm orange text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light .navbar {
+  background-color: #FFD54F; /* Warm yellow navbar */
+  color: #FF6B00; /* Orange text */
+  box-shadow: 0 2px 8px rgba(255, 183, 77, 0.3);
+}
+
+body.light .search-bar input {
+  background-color: #FFFCF2; /* Very light yellow for input */
+  color: #FF6B00;
+  border: 1px solid #FFB74D;
+}
+
+body.light .search-button {
+  background-color: #FF9800; /* Orange button */
+  color: white;
+}
+
+body.light .search-button:hover {
+  background-color: #F57C00;
+}
+
+body.light .card {
+  background-color: #FFF3E0; /* Light orange card background */
+  color: #FF6B00;
+  box-shadow: 0 4px 8px rgba(255, 167, 38, 0.2);
+}
+
+body.light .card button {
+  background-color: #FF9800;
+  color: white;
+}
+
+body.light .card button:hover {
+  background-color: #F57C00;
+}
+
+body.light footer {
+  background-color: #FFD54F;
+  color: #FF6B00;
+}
+
+body.light .profile-circle {
+  background-color: #FF9800;
+}
+
+body.light .dropdown-menu {
+  background-color: #FFF3E0;
+  border: 1px solid #FFB74D;
+}
+
+body.light .dropdown-item {
+  color: #FF6B00;
+}
+
+body.light .dropdown-item:hover {
+  background-color: #FFE0B2;
+}
+
+/* Dark Theme with specified colors */
+body.dark {
+  background-color: #213555; /* Dark navy blue background */
+  color: #F5EFE7; /* Light cream text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark .navbar {
+  background-color: #3E5879; /* Medium navy blue navbar */
+  color: #F5EFE7; /* Light cream text */
+  box-shadow: 0 2px 8px rgba(33, 53, 85, 0.5);
+}
+
+body.dark .search-bar input {
+  background-color: #213555; /* Dark navy input background */
+  color: #F5EFE7; /* Light cream text */
+  border: 1px solid #D8C4B6; /* Beige border */
+}
+
+body.dark .search-button {
+  background-color: #D8C4B6; /* Beige button */
+  color: #213555; /* Dark navy text */
+}
+
+body.dark .search-button:hover {
+  background-color: #F5EFE7; /* Light cream on hover */
+  color: #213555; /* Dark navy text */
+}
+
+body.dark .card {
+  background-color: #3E5879; /* Medium navy blue card */
+  color: #F5EFE7; /* Light cream text */
+  box-shadow: 0 4px 8px rgba(33, 53, 85, 0.5);
+  border: 1px solid #D8C4B6; /* Beige border */
+}
+
+body.dark .card button {
+  background-color: #D8C4B6; /* Beige button */
+  color: #213555; /* Dark navy text */
+}
+
+body.dark .card button:hover {
+  background-color: #F5EFE7; /* Light cream on hover */
+  color: #213555; /* Dark navy text */
+}
+
+body.dark footer {
+  background-color: #3E5879; /* Medium navy blue footer */
+  color: #F5EFE7; /* Light cream text */
+  border-top: 1px solid #D8C4B6; /* Beige border */
+}
+
+body.dark .profile-circle {
+  background-color: #D8C4B6; /* Beige background */
+  color: #213555; /* Dark navy text */
+}
+
+body.dark .dropdown-menu {
+  background-color: #3E5879; /* Medium navy blue dropdown */
+  border: 1px solid #D8C4B6; /* Beige border */
+}
+
+body.dark .dropdown-item {
+  color: #F5EFE7; /* Light cream text */
+}
+
+body.dark .dropdown-item:hover {
+  background-color: #213555; /* Dark navy on hover */
+  color: #D8C4B6; /* Beige text on hover */
+}
+
+body.dark .auth-box {
+  background-color: #134B70; /* Deep teal blue auth box */
+  box-shadow: 0 4px 8px rgba(32, 30, 67, 0.5);
+  border: 1px solid #508C9B; /* Muted teal border */
+}
+
+body.dark .cyber-heading {
+  color: #EEEEEE; /* Light gray headings */
+}
+
+body.dark .rent-days-counter button {
+  background-color: #508C9B; /* Muted teal counter buttons */
+  color: #EEEEEE; /* Light gray text */
+}
+
+body.dark .rent-days-counter button:hover {
+  background-color: #134B70; /* Deep teal blue on hover */
+}
+
+body.dark .theme-toggle-btn {
+  background-color: #508C9B; /* Muted teal toggle button */
+  color: #EEEEEE; /* Light gray text */
+}
+
+body.dark .theme-toggle-btn:hover {
+  background-color: #134B70; /* Deep teal blue on hover */
+}

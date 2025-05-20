@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+body {
+  background: #121212;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+/* General container styling */
+.home-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #101010;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 🟢 Hero Section */
+.hero {
+  padding: 50px 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px rgba(255, 0, 127, 0.3);
+}
+
+.cyber-title {
+  font-size: 2.5rem;
+  color: #ff007f;
+}
+
+.cyber-subtitle {
+  font-size: 1.2rem;
+  color: #00fff0;
+  opacity: 0.8;
+}
+
+/* CTA Button */
+.cyber-btn {
+  background: linear-gradient(45deg, #ff007f, #00fff0);
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cyber-btn:hover {
+  box-shadow: 0px 0px 12px rgba(255, 0, 127, 0.6);
+}
+
+/* 🟣 Instruments Section */
+.instruments-section {
+  margin-top: 40px;
+}
+
+/* Section heading */
+.cyber-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* 🔵 Instrument Cards */
+.instrument-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.instrument-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instrument-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(255, 0, 127, 0.5);
+}
+
+.instrument-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.instrument-card h3 {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.instrument-card p {
+  font-size: 1rem;
+  color: #00fff0;
+  margin-bottom: 15px;
+}
+
+/* View details button */
+.view-details-btn {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff007f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #ff3399;
+  transform: translateY(-3px);
+}
+
+/* 🟠 View Button */
+.view-btn {
+  background: #ff007f;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #ff3399;
+}
+
+/* 🟡 Button Group */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rent-btn, .buy-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.rent-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.rent-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.buy-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.buy-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Options Modal */
+.options-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(255, 0, 127, 0.3);
+  text-align: center;
+  z-index: 1000;
+}
+
+.options-modal h3 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-toggle {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.option-toggle.active {
+  background-color: #2980b9;
+}
+
+.rent-options {
+  margin-top: 20px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.counter button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.rent-now-btn, .buy-now-btn, .close-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #e74c3c;
+  color: white;
+  margin-top: 10px;
+}
+
+.close-btn {
+  background-color: #555;
+}
+
+.close-btn:hover {
+  background-color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .instrument-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .instrument-card img {
+    max-width: 180px;
+  }
+
+  .view-details-btn {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}

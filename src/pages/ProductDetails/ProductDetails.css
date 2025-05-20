@@ -1,0 +1,134 @@
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background: #121212;
+  }
+  
+  .product-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgba(255, 0, 127, 0.3);
+  }
+  
+  .product-details {
+    max-width: 400px;
+  }
+  
+  .price {
+    color: #00fff0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+.rent-days-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.rent-days-counter button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rent-days-counter button:hover {
+  background-color: #0056b3;
+}
+
+.rent-days-counter span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.total-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.product-details-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(255, 0, 127, 0.3);
+}
+
+.product-details-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-toggle {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.option-toggle.active {
+  background-color: #2980b9;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.counter button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.rent-now-btn, .buy-now-btn, .back-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #ff007f;
+  color: white;
+  margin-top: 10px;
+}
+
+.back-btn {
+  background-color: #555;
+}
+
+.back-btn:hover {
+  background-color: #333;
+}
